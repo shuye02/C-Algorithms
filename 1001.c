@@ -1,14 +1,18 @@
 // 谁拿了最多奖学金
 // https://www.vijos.org/p/1001
+// RAM: 256.0 KiB
+// Time Taken: 2ms
 
 #include <stdio.h>
 #include <string.h>
 
 int main() {
+    // freopen ("1001.txt","r",stdin); //输入测试数据
     int N = 0; // 学生总数
     scanf("%d", &N);
     // 定义输入
-    char name[21], official[2], west[2];
+    char name[21];
+    char official, west;
     int final, review, paper;
     // 定义运算中项
     int scholarship; // 每个学生获得的奖学金数量
@@ -19,7 +23,7 @@ int main() {
     for (int i = 1; i <= N; i++) {
         scholarship = 0; // init
         // data input
-        scanf("%s %d %d %s %s %d", name, &final, &review, official, west, &paper);
+        scanf("%s %d %d %c %c %d", name, &final, &review, &official, &west, &paper);
         // 计算颁奖
         if (final > 80 && paper >= 1) {
             scholarship += 8000;
@@ -30,10 +34,10 @@ int main() {
         if (final > 90) {
             scholarship += 2000;
         }; //成绩优秀奖
-        if (west[0] == 'Y' && final > 85) {
+        if (west == 'Y' && final > 85) {
             scholarship += 1000;
         }; //西部奖学金
-        if (official[0] == 'Y' && review > 80) {
+        if (official == 'Y' && review > 80) {
             scholarship += 850;
         }; //班级贡献奖
         total += scholarship; //求总颁发数量
