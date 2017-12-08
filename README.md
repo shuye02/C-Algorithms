@@ -10,5 +10,11 @@ Here comes a list of the problems I have answered and which contest they are in:
 * [1131.c](https://github.com/shuye02/Vijos-problems/blob/master/1131.c)
 ##### NOIP 2005 High School Division
 * [1001.c](https://github.com/shuye02/Vijos-problems/blob/master/1001.c)
-##### NOIP 2013 High School Division
+##### NOIP 2005 Middle School Division
+* [1102.c](https://github.com/shuye02/Vijos-problems/blob/master/1102.c)
+##### NOIP 2012 Middle School Division
+* [1786.c](https://github.com/shuye02/Vijos-problems/blob/master/1786.c)
+##### NOIP 2013 Middle School Division
 * [1848.c](https://github.com/shuye02/Vijos-problems/blob/master/1848.c)
+#### And a few that I wrote for fun
+* [Pythagorean_triangle.c](https://github.com/shuye02/Vijos-problems/blob/master/Pythagorean_triangle.c)
